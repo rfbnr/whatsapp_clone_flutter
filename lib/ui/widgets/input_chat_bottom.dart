@@ -2,8 +2,22 @@ import 'package:animated_theme_switcher/animated_theme_switcher.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/shared/color.dart';
 
-class InputChatBottom extends StatelessWidget {
+class InputChatBottom extends StatefulWidget {
   const InputChatBottom({super.key});
+
+  @override
+  State<InputChatBottom> createState() => _InputChatBottomState();
+}
+
+class _InputChatBottomState extends State<InputChatBottom> {
+  final TextEditingController inputMessageController = TextEditingController();
+  String _message = "";
+
+  @override
+  void dispose() {
+    inputMessageController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +40,13 @@ class InputChatBottom extends StatelessWidget {
               textAlignVertical: TextAlignVertical.center,
               maxLines: 5,
               minLines: 1,
+              onChanged: (value) {
+                setState(() {
+                  _message = value;
+                });
+              },
+              cursorColor: AppColor.kSecondaryColor,
+              controller: inputMessageController,
               decoration: InputDecoration(
                 border: InputBorder.none,
                 contentPadding: const EdgeInsets.all(5),
@@ -66,8 +87,8 @@ class InputChatBottom extends StatelessWidget {
               radius: 24,
               child: IconButton(
                 onPressed: () {},
-                icon: const Icon(
-                  Icons.mic,
+                icon: Icon(
+                  _message.isNotEmpty ? Icons.send : Icons.mic,
                   color: AppColor.kWhiteColor,
                 ),
               ),
