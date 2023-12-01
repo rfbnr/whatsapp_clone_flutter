@@ -1,16 +1,39 @@
-# whatsapp_clone
+# WhatsApp Clone
 
-A new Flutter project.
+### Setup & Installation
 
-## Getting Started
+To get a local copy of the code, clone it using git:
 
-This project is a starting point for a Flutter application.
+```
+git clone https://github.com/ridwanfbnr/whatsapp_clone_flutter
+cd whatsapp_clone_flutter
+flutter pub get
+flutter run
 
-A few resources to get you started if this is your first Flutter project:
+Happy coding!
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Chats & Updates Screen Light
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="assets/screens/light-chat-screen.png" style=" width:200px" /> <img src="assets/screens/light-chat-screen2.png" style=" width:200px" />
+<img src="assets/screens/light-updates-screen.png" style=" width:200px" /> <img src="assets/screens/light-updates2-screen.png" style=" width:200px" />
+
+### Communities, Calls, Settings, Personal Chat Screen Light
+
+<img src="assets/screens/light-communities-screen.png" style=" width:200px" /> <img src="assets/screens/light-calls-screen.png" style=" width:200px" />
+<img src="assets/screens/light-settins-screen.png" style=" width:200px" /> <img src="assets/screens/light-personal-chat-screen.png" style=" width:200px" />
+
+### Chats & Updates Screen Dark
+
+<img src="assets/screens/dark-chat-screen.png" style=" width:200px" /> <img src="assets/screens/dark-chat-screen2.png" style=" width:200px" />
+<img src="assets/screens/dark-updates-screen.png" style=" width:200px" /> <img src="assets/screens/dark-updates-screen2.png" style=" width:200px" />
+
+### Communities, Calls, Settings, Personal Chat Screen Dark
+
+<img src="assets/screens/dark-communities-screen.png" style=" width:200px" /> <img src="assets/screens/dark-calls-screen.png" style=" width:200px" />
+<img src="assets/screens/dark-setting-screen.png" style=" width:200px" /> <img src="assets/screens/dark-personal-chat-screen.png" style=" width:200px" />
+
+### Story View Screen
+
+<img src="assets/screens/story-view-screen.png" style=" width:200px" /> <img src="assets/screens/story-view-screen2.png" style=" width:200px" />
+<img src="assets/screens/story-view-screen3.png" style=" width:200px" />
